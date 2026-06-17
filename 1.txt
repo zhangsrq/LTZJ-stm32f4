@@ -1,0 +1,11 @@
+..\HARDWARE\GAME\game.c(460): warning:  #223-D: function "delay_ms" declared implicitly
+      delay_ms(60);
+..\HARDWARE\GAME\game.c(579): error:  #20: identifier "KEY_UP_PRES" is undefined
+          case KEY_UP_PRES:
+..\HARDWARE\GAME\game.c(582): error:  #20: identifier "KEY1_PRES" is undefined
+          case KEY1_PRES:   // Down
+..\HARDWARE\GAME\game.c(585): error:  #20: identifier "KEY0_PRES" is undefined
+          case KEY0_PRES:   // Right
+..\HARDWARE\GAME\game.c(588): error:  #20: identifier "KEY2_PRES" is undefined
+          case KEY2_PRES:   // Left
+..\HARDWARE\GAME\game.c: 1 warning, 4 errors
