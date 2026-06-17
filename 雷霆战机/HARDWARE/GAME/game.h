@@ -16,7 +16,7 @@ typedef enum {
 } GameState;
 
 // --- Object Limits ---
-#define MAX_PLAYER_BULLETS  30
+#define MAX_PLAYER_BULLETS  64
 #define MAX_ENEMY_BULLETS   50
 #define MAX_ENEMIES         15
 #define MAX_ITEMS           8
@@ -32,7 +32,7 @@ typedef enum {
 // --- Bullets ---
 #define PBULLET_W           3
 #define PBULLET_H           12
-#define PBULLET_SPEED       10
+#define PBULLET_SPEED       14
 #define EBULLET_R           3
 #define EBULLET_SPEED       5
 
