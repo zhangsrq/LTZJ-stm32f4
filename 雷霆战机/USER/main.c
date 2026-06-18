@@ -4,6 +4,7 @@
 #include "led.h"
 #include "lcd.h"
 #include "key.h"
+#include "sram.h"
 #include "game.h"
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -23,6 +24,7 @@ int main(void)
     LED_Init();
     LCD_Init();
     KEY_Init();
+    SRAM_Init();   // external 1MB SRAM for double buffer
 
     // Initialize and show start page
     Game_Init();
@@ -58,7 +60,7 @@ int main(void)
                 break;
         }
 
-        delay_ms(16);  // ~60 FPS
+       // delay_ms(8);  // ~30 FPS (double-buffer flush takes ~15ms)
         
     }
 }
